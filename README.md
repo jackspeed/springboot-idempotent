@@ -1,2 +1,4 @@
 # springboot-idempotent
 springboot接口幂等性校验demo
+
+基本过程：第一次请求返回token，接着前端请求其他任意接口每次都带上token，并且token每请求一次改变一次，前端需要每次请求完成更新本地token信息
